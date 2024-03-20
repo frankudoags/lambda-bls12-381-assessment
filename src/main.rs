@@ -32,6 +32,7 @@ fn convert_hex_to_unsigned_int(hex: &str) -> u128 {
 }
 
 /// This converts the limbs of the X and Y Field elements into a hex string
+/// so that we can print the public key in a readable format
 fn limbs_to_hex(limbs: &[u64]) -> String {
     limbs
         .iter()
